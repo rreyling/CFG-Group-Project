@@ -147,6 +147,7 @@ nav.fill ul li a:hover:after {
 .banner-display {
     font-size: 3rem;
     font-weight: bold;
+    color: #ffffff;
     position: relative;
     z-index: 3;
 }
