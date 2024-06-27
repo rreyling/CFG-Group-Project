@@ -30,6 +30,11 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-logo {
+    max-height: 50px; /* Adjust the size as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
 .nav-link {
     font-weight: 600;
     color: #2c3e50 !important;
