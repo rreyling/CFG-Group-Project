@@ -11,8 +11,11 @@ body {
     padding-top: 56px;
     background-color: #f8f9fa;
     }
+h1 {
+    color: #258CD0;
+    font-weight: bold;
+}
       
-
 /* Adjustments for navigation bar */
 .navbar-nav .nav-item .nav-link {
     padding: 10px 15px;
