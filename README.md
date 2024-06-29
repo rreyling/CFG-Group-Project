@@ -25,7 +25,7 @@ Welcome to Calming Chronicles! This project aims to provide a serene and calming
 
 - **HTML5**
 - **CSS3**
-- **Bootstrap 4.5.2**
+- **Bootstrap 4.5.2, 5.3.3**
 - **JavaScript**
 - **Google Fonts**
 
