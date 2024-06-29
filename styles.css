@@ -16,12 +16,13 @@ h1 {
 }
 
 h2 {
-    color: #2c3e50;
+    color: #258CD0;
 }
 
 p {
     font-size: 1.1em;
     line-height: 1.6;
+    margin-bottom: 1em; /* Ensure sufficient spacing between paragraphs */
 }
 
 /* Navigation Bar */
@@ -35,13 +36,18 @@ p {
     margin-right: 10px; /* Space between logo and text */
 }
 
+.navbar-text {
+    color: #258CD0 !important; /* Set the text color to blue */
+    font-weight: bold;
+}
+
 .nav-link {
     font-weight: 600;
     color: #2c3e50 !important;
 }
 
 .nav-link:hover {
-    color: #3498db !important;
+    color:#258CD0 !important;
 }
 
 .navbar-toggler-icon {
@@ -94,7 +100,63 @@ p {
     color: white; /* Ensures the text within banner-display is white */
 }
 
-/* Enlarged Topic Buttons */
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* INDEX/HOME PAGE - About Section */
+.about-section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Adjusted to fit page size */
+    width: 90%;
+    align-self: center; /* Center align about section */
+}
+
+.about-section h1 {
+    margin-top: 0;
+    color: #258CD0; /* Ensuring consistency */
+}
+
+.about-section p {
+    color: #666;
+}
+
+/* INDEX/HOME PAGE - Video Section */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Set maximum width for the video */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    margin: 20px auto; /* Center video container */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* INDEX/HOME PAGE - Enlarged Topic Buttons */
 .button-container-fluid .btn {
     padding: 20px 40px; /* Increase padding for a larger button */
     font-size: 1.75rem;  /* Increase font size */
@@ -103,9 +165,10 @@ p {
 
 .button-container-fluid .btn:hover {
     transform: scale(1.1); /* Slightly enlarge button on hover */
+    background-color: #258CD0; /* Change background color on hover */
 }
 
-/* Ensure the buttons are responsive */
+/* INDEX/HOME PAGE - Ensure the buttons are responsive */
 @media (min-width: 576px) {
     .button-container-fluid .btn {
         padding: 25px 50px; /* Larger padding for larger screens */
@@ -141,14 +204,66 @@ p {
     margin-top: 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
+/* Journaling Page */
+/* Heading styling */
+#JournalPageHeading {
     text-align: center;
+    margin: 20px 0;
+
+/* Base styling for the JOURNALING PAGE NAVIGATION */
+#nav-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+nav-page {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
 }
 
-footer p {
-    margin: 0;
+nav-page button {
+    padding: 10px 20px;
+    background-color: #258CD0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav-page button:hover {
+    background-color: #1e70a1;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 20px;
+    margin: 70px 0;
+}
+
+/* Journaling Stpes - accordion styles */
+.accordion {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
