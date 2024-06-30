@@ -265,3 +265,18 @@ section {
     color: #1e70a1;
     text-decoration: none;
 }
+
+/* Resources Page - Addting spacing */
+.section-spacing {
+    margin-top: 20px; /* Adjust the value as needed */
+    margin-left: 10px;
+}
+
+/* Add padding to accordion items */
+.accordion .accordion-item {
+    padding-left: 20px; /* Add padding to the left */
+    padding-right: 20px; /* Add padding to the right */
+    padding-top: 10px; /* Optional: add padding to the top */
+    padding-bottom: 10px; /* Optional: add padding to the bottom */
+    margin: 0; /* Remove default margin */
+}
