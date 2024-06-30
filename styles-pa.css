@@ -68,5 +68,6 @@ body{
 }
 
 .modal-header {
-    color: #258CD0;
+    color:white;
+    background-color: orange;
 }
