@@ -272,6 +272,12 @@ section {
     margin-left: 10px;
 }
 
+/* Resources Page - Centering heading */
+#ResourcesPageHeading {
+    text-align: center;
+    margin: 20px 0;
+}
+
 /* Add padding to accordion items */
 .accordion .accordion-item {
     padding-left: 20px; /* Add padding to the left */
